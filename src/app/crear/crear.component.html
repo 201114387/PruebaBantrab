@@ -1,0 +1,70 @@
+<div class="row mt-5">
+    <div class="col-md-10 offset-md-1">
+        <div class="row">
+            <div class="col-md-5">
+                <h2>Creación de Empresas</h2>
+                <h4>Ingresa información del usuario</h4>
+            </div>
+            <div class="col-md-1 offset-md-5 mt-4">
+                <button type="button" class="btn btn-primary">Cancelar</button>
+            </div>
+            <div class="col-md-1 mt-4">
+                <button type="button" class="btn btn-primary" (click)="ngCrearEmpresa()">Guardar</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <label class="input-group">Nombre Comercial</label>
+                            <input type="text" class="form-control" placeholder="Ingrese nombre comercial" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "nombre">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <label class="input-group">Razón Social</label>
+                            <input type="text" class="form-control" placeholder="Ingrese razón social" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "razon">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <label class="input-group">Telefono</label>
+                            <input type="number" class="form-control" placeholder="Ingrese un telefono" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "telefono">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <label class="input-group">Correo</label>
+                            <input type="text" class="form-control" placeholder="Ingrese un correo" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "correo">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <label class="input-group">Nit</label>
+                            <input type="number" class="form-control" placeholder="Ingrese su nit" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "nit">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <label class="input-group">Estado</label>
+                            <input type="text" class="form-control" placeholder="Ingrese algún estado" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "estado">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <label class="input-group">Dirección</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su dirección" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "direccion">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
