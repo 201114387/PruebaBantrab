@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ListaEmpresa } from '../modelos/ListaEmpresa'
+import { ListaEmpresa } from '../modelos/ListaEmpresa';
 import { Header } from '../modelos/Headers'
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
 import { Observable } from 'rxjs';
@@ -22,5 +22,15 @@ export class EmpresaService {
   CrearEmpresa(data:string):Observable<string[]>{
     this.url = 'https://apitest-bt.herokuapp.com/api/v1/empresas';
     return this.http.post<string[]>(this.url,data,{headers:{user:"User123", password:"Password123"}});
+  }
+
+  ObtenerEmpresa(id:number):Observable<ListaEmpresa[]>{
+    this.url = 'https://apitest-bt.herokuapp.com/api/v1/empresas/' + id;
+    return this.http.get<ListaEmpresa[]>(this.url,{headers:{user:"User123", password:"Password123"}});
+  }
+
+  EditarEmpresa(id:number, data:string):Observable<ListaEmpresa[]>{
+    this.url = 'https://apitest-bt.herokuapp.com/api/v1/empresas/' + id;
+    return this.http.put<ListaEmpresa[]>(this.url,data,{headers:{user:"User123", password:"Password123"}});
   }
 }

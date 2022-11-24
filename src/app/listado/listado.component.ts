@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { ListaEmpresa } from '../modelos/ListaEmpresa';
 import { EmpresaService} from '../Servicios/empresa.service'
+import { EditarComponent } from '../editar/editar.component';
 
 @Component({
   selector: 'app-listado',

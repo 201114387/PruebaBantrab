@@ -6,7 +6,7 @@
           <h4>Agrega, Edita ó elimina numero de usuarios</h4>
         </div>
         <div class="col-md-1 offset-md-6 mt-4">
-          <button type="button" class="btn btn-primary">Agregar</button>
+          <button type="button" class="btn btn-primary" routerLink="/Crear">Agregar</button>
         </div>
       </div>
       <div class="row mt-5">
@@ -27,7 +27,7 @@
               <td>{{Empresa.nombre_comercial}}</td>
               <td>{{Empresa.correo}}</td>
               <td>{{Empresa.nit}}</td>
-              <td><button type="button" class="btn btn-primary">Editar</button></td>
+              <td><button type="button" class="btn btn-primary" routerLink="/Editar/{{Empresa.id}}">Editar</button></td>
               <td><button type="button" class="btn btn-primary">Eliminar</button></td>
             </tr>
           </tbody>
